@@ -1,0 +1,26 @@
+table {
+    background-color: beige;
+    width: 1000px;
+    height: 750px;
+    font-size: 30px;
+}
+
+#H {
+    background-color: powderblue;
+}
+
+#K {
+    background-color: skyblue;
+}
+
+#Cs {
+    background-color: lightskyblue;
+}
+
+#border {
+    background-color: turquoise;
+}
+
+#empty {
+    background-color: gray;
+}
