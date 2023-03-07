@@ -85,8 +85,8 @@ def tenth_ex():
             print("You can enter to the first room.")
         else:
             print("You can enter to the second room.")
-    elif int(num[2])%2==0:
-        print("You can enter to the third room.")
+    elif int(num[1])%2 == 0:
+            print("You can enter to the third room.")
     else:
         print("You can enter to the forth room.")
 
