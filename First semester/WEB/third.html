@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="/action_page.php" method="get">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" style="padding-right: 100px;">Registration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email:</label></td>
+                    <td><input type="email" id="mail" name="mail"></td>
+                </tr>
+                <tr>
+                    <td><label for="pw">Password:</label></td>
+                    <td><input type="text" id="pw" name="pw"></td>
+                </tr>
+                <tr>
+                    <td><label for="tel">Tel:</label></td>
+                    <td><input type="tel" id="tel" name="tel" value="+36"></td>
+                </tr>
+                <tr>
+                    <td><label for="file">Choose file:</label></td>
+                    <td><input type="file" name="file"></td>
+                </tr>
+                <tr>
+                    <td><label for="sex">Choose your sex:</label></td>
+                    <td>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
