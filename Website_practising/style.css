@@ -1,7 +1,21 @@
-.bg1 {
-    background: cyan;
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
-
-.bg2 {
-    background: yellow;
+il {
+    display: inline;
+}
+a {
+    display: block;
+}
+#about {
+    float: right;
+}
+li a {
+    float: left;
+}
+li a:hover {
+    background-color: #111;
 }
