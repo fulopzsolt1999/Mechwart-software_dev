@@ -60,18 +60,20 @@ def ninth():
     print(result)
     
 def tenth():
-    result = 0
-    for _ in range(5):
+    for i in range(5):
         getnum = int(input("Give me a number: "))
+        if i == 0:
+            result = getnum
         if result < getnum:
             result = getnum
     print(result)
     
 def eleventh():
     getnum = int(input("Give me a number: "))
-    for i in range(1, getnum+1):
+    for i in range(1, int(getnum/2)+1):
         if getnum%i == 0:
-            print(i)    
+            print(i)
+    print(getnum)
 
 def twelveth():
     getnum = int(input("Give me a number: "))
@@ -202,16 +204,21 @@ def twentyfourth():
     rnum = r.randint(1,100)
     gnum = int(input("Guess a number (0 if you want to quit): "))
     count = 1
+    evenN = 0
     while gnum != rnum:
-        if gnum < rnum:
+        if gnum == 0:
+            print(f"You quited!\nYou guessed {evenN} even number")
+            break
+        elif gnum < rnum:
             print("The number to be guessed is higher!")
-        elif gnum == 0:
-            print("You quited!")
         else:
             print("The number to be guessed is lower!")
-        gnum = int(input("Guess a number (0 if you want to quit): "))
+        if gnum % 2 == 0:
+            evenN += 1
         count += 1
-    print(count)
+        gnum = int(input("Guess a number (0 if you want to quit): "))
+    if gnum == rnum:
+        print(f"You won in {count} rounds!\nYou guessed {evenN} even number")
     
 def twentyfifth():
     lst = ["r", "p", "s"]
@@ -224,18 +231,17 @@ def twentyfifth():
             print(f"Draw this round! Mypoints: {mypoints} Enemy points: {mpoints}")
         elif (gword == "r" and relement == "s") or (gword == "s" and relement == "p") or (gword == "p" and relement == "r"):
             mypoints += 1
-            if mypoints < 5:
-                print(f"Win this round! Mypoints: {mypoints} Enemy points: {mpoints}")
-            elif mypoints == 5:
-                print(f"Congratulations you won! Mypoints: {mypoints} Enemy points: {mpoints}")
-                break
+            print(f"Win this round! Mypoints: {mypoints} Enemy points: {mpoints}")
         else:
             mpoints += 1
-            if mpoints < 5:
-                print(f"Lose this round! Mypoints: {mypoints} Enemy points: {mpoints}")
-            elif mpoints == 5:
-                print(f"Poor you, you lost! Mypoints: {mypoints} Enemy points: {mpoints}")
-                break
+            print(f"Lose this round! Mypoints: {mypoints} Enemy points: {mpoints}")
+            
+        if mypoints == 5:
+            print(f"Congratulations you won! Mypoints: {mypoints} Enemy points: {mpoints}")
+            break
+        elif mpoints == 5:
+            print(f"Poor you, you lost! Mypoints: {mypoints} Enemy points: {mpoints}")
+            break
         
 if __name__ == "__main__":
     #first()
@@ -261,5 +267,5 @@ if __name__ == "__main__":
     #twentyfirst()
     #twentysecond()
     #twentythird()
-    #twentyfourth()
-    twentyfifth()
+    twentyfourth()
+    #twentyfifth()
