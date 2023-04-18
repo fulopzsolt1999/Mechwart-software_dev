@@ -1,0 +1,18 @@
+﻿<div> 
+	<p>Fűszeres avokádókrém</p>
+	<table>
+		<tr><td>HOZZÁVALÓK</td><td></td></tr>			
+		<tr><td>2 db</td><td>avokádó</td></tr>
+		<tr><td>2 gerezd</td><td>fokhagyma</td></tr>
+		<tr><td>1 ek</td><td>olívaolaj</td></tr>
+		<tr><td>1 db</td><td>lime vagy citrom</td></tr>
+		<tr><td>2 szál</td><td>újhagyma</td></tr>
+		<tr><td>1 csipet</td><td>só</td></tr>
+	</table>
+	<p>ELKÉSZÍTÉS</p>
+	Vágd félbe az avokádót, vedd ki a magját, és egy kanál segítségével szedd ki a húsát.
+	Add hozzá az olívaolajat, és törd össze villával, vagy pépesítsd botmixerrel. Akkor jó, ha krémes az állaga.
+	A citromot vagy a lime-ot facsard ki, és öntsd a levét a keverékhez.
+	A fokhagymát törd össze, az újhagymát aprítsd fel, és keverd a krémhez. Sózd, borsozd ízlés szerint, ha csípősen szereted, rakhatsz bele chilit is.
+	Amennyiben időd engedi, érdemes pár órára a hűtőbe tenni, hogy az ízek jól összeérjenek. Arra ügyelj, hogy levegőn gyorsan bebarnul.
+</div>
