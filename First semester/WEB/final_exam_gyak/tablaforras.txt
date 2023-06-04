@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <td>Elnevezés</td>
+  </tr>
+  <tr>
+    <td>Magyar név</td>
+    <td>Füsti fecske</td>
+  </tr> 
+  <tr>
+    <td>Tudományos név</td>
+    <td>Hirundo rustica</td>
+  </tr>
+  <tr>
+    <td>Angol név</td>
+    <td>Barn Swallow</td>
+  </tr> 
+  <tr>
+    <td>Rendszertan</td>
+  </tr>
+  <tr>
+    <td>Rend</td>
+    <td>Verébalakúak Passeriformes</td>
+  </tr>
+  <tr>
+    <td>Család</td>
+    <td>Fecskefélék Hirundinidae</td>
+  </tr> 
+  <tr>
+    <td>Védelem</td>
+  </tr>
+ </table> 
