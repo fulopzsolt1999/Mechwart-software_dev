@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #faebd7;
+}
+
+.container {
+    margin-top: 238.4px;
+    margin-left: 672px;
+    width: 30%;
+    background-color: #f5c990;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.36);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.36);
+}
+
+.container label {
+    margin: 10px 0px 10px 0px;
+}
+
+.container button {
+    margin: 10px 0px 10px 0px;
+}
+
+.container input {
+    border-radius: 2px;
+}

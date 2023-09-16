@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS absolute basics I.</title>
+</head>
+<body>
+    <div class="container">
+        <label for="name" id="name-label">Name*</label>
+        <input type="text" id="name" onclick="check_input_field('name')">
+
+        <label for="birth" id="birth-label">Birth date*</label>
+        <input type="date" id="birth" onclick="check_input_field('birth')">
+
+        <label for="phone" id="phone-label">Phone number*</label>
+        <input type="tel" id="phone" onclick="check_input_field('phone')">
+        <small id="phone-format">Format: 36123456789 / 06123456789</small>
+
+        <label for="email" id="email-label">Email*</label>
+        <input type="email" id="email" onclick="check_input_field('email')">
+
+        <label for="confEmail" id="confEmail-label">Confirm email*</label>
+        <input type="email" id="confEmail" onclick="check_input_field('confEmail')">
+
+        <label for="password" id="password-label">Password (8 characters minimum)*</label>
+        <input type="password" id="password" onclick="check_input_field('pw')">
+
+        <label for="confPassword" id="confPassword-label">Confirm password*</label>
+        <input type="password" id="confPassword" onclick="check_input_field('confPw')">
+
+        <button id="submit-btn" onclick="registration_form()">Submit</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
