@@ -19,7 +19,7 @@ let currentYear = date.getFullYear();
 regForm.birth.value = `${currentYear}-${currentMonth}-${currentDay}`;
 
 function registration_form() {
-    if (regForm.name.previousSibling != null) {
+    if (nameLabel.previousSibling != document.getElementById("form-title")) {
         nameLabel.previousSibling.remove();
     }
     if (regForm.name.nextSibling != document.getElementById("birth-label")){
@@ -28,7 +28,7 @@ function registration_form() {
     if (regForm.birth.nextSibling != document.getElementById("phone-label")) {
         regForm.birth.nextSibling.remove();
     }
-      if (phoneFormat.nextSibling != document.getElementById("email-label")) {
+    if (phoneFormat.nextSibling != document.getElementById("email-label")) {
         phoneFormat.nextSibling.remove();
       }
     if (regForm.email.nextSibling != document.getElementById("confEmail-label")){
@@ -73,7 +73,9 @@ function check_correct_inputs() {
         error_message("birth", document.createTextNode("Please select a year before 2023!"));
     }
     if (regForm.phone.value.slice(0, 2) != "06" && regForm.phone.value.slice(0, 2) != "36" || regForm.phone.value.length != 11) {
-        error_message("phone", document.createTextNode("Please enter a valid phone number!"));
+        let phoneErr = document.createTextNode("Please enter a valid phone number");
+        regForm.phone.style.border = "1px solid red";
+        phoneFormat.parentNode.insertBefore(phoneErr, phoneFormat.nextSibling);
     }
     if (!regForm.email.value.match(validRegex)) {
         error_message("email", document.createTextNode("Please enter a valid email!"));
@@ -81,9 +83,11 @@ function check_correct_inputs() {
     if (regForm.email.value != regForm.confEmail.value) {
         error_message("confEmail", document.createTextNode("The given emails do not match!"));
     }
-    if (8 > regForm.pw.value.length > 16) {
+    console.log(regForm.confPw.value.length, regForm.pw.value.length);
+    if (regForm.pw.value.length < 8 || regForm.pw.value.length > 16) {
         error_message("pw", document.createTextNode("Please enter a valid password!"));
     }
+    console.log(regForm.pw.value, regForm.confPw.value);
     if (regForm.pw.value != regForm.confPw.value) {
         error_message("confPw", document.createTextNode("The given passwords do not match!"));
     }
