@@ -1,21 +1,20 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #faebd7;
-}
-
-.container {
-    margin-top: 238.4px;
-    margin-left: 672px;
-    width: 30%;
-    background-color: #f5c990;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    top: 19.9%;
+    background-color: #f5c990;
     border: 2px solid #000;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.36);
@@ -23,14 +22,78 @@ body {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.36);
 }
 
-.container label {
+.input-fields{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+}
+
+.input-fields label {
+    margin: 10px 0px 5px 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input-fields button {
+    font-size: 15px;
+    font-weight: 600;
     margin: 10px 0px 10px 0px;
 }
 
-.container button {
-    margin: 10px 0px 10px 0px;
+.input-fields input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #faebd7;
+    border-bottom: 1px solid #faebd7;
+    padding: 7px 0px;
 }
 
-.container input {
-    border-radius: 2px;
+.input-fields button {
+    border: 2px solid #000;
+    background-color: transparent;
+    padding: 6px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.input-fields button:hover {
+    background-color: #faebd7;
+}
+
+@media (max-width: 1200px) {
+    .input-fields {
+        width: 500px;
+    }
+    .input-fields h1 {
+        font-size: 25px;
+    }
+    .input-fields label,
+    .input-fields small {
+        font-size: 12px;
+    }
+    .input-fields input {
+        font-size: 12px;
+    }
+    .input-fields button {
+        font-size: 12px;
+    }
+}
+@media (max-width: 900px) {
+    .input-fields {
+        width: 450px;
+    }
+
+    .input-fields h1 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 500px) {
+    .container,
+    .input-fields {
+        width: 100%;
+    }
 }
