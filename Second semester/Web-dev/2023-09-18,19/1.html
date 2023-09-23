@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                width: 320px;
+
+            }
+            img{
+                width: 100px;
+                
+                
+
+            }
+            div{
+                width: 100px;
+                height: 100px;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body onload="init()">
+        <div><img onclick="csere(1)" src="pics\1.png" id="1"></div>
+        <div><img onclick="csere(2)" src="pics\2.png" id="2"></div>
+        <div><img onclick="csere(3)" src="pics\3.png" id="3"></div>
+        <div><img onclick="csere(4)" src="pics\4.png" id="4"></div>
+        <div><img onclick="csere(5)" src="pics\5.png" id="5"></div>
+        <div><img onclick="csere(6)" src="pics\6.png" id="6"></div>
+        <div><img onclick="csere(7)" src="pics\7.png" id="7"></div>
+        <div><img onclick="csere(8)" src="pics\8.png" id="8"></div>
+        <div><img onclick="csere(9)" src="pics\9.png" id="9"></div>
+        <div><img onclick="csere(10)" src="" id="10"></div>
+
+        <script>
+            let ures=10;
+
+            function init(){
+                let n=1000;
+                for(let i=0; i<n; i++){
+                    csere(Math.floor(Math.random()*10)+1);
+
+
+                }
+
+
+            }
+
+
+
+            function csere(mezo){
+                if (mezo==7 && (ures==10 || ures==4 || ures==8)){
+                    document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;
+
+
+                }
+                if (mezo==1 && (ures==2 || ures==4 )){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==2 && (ures==1 || ures==5 || ures==3)){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==3 && (ures==2 || ures==6 || ures==8)){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==4 && (ures==1 || ures==5 || ures==7)){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==5 && (ures==2 || ures==4 || ures==6 || ures==8)){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==6 && (ures==3 || ures==5 || ures==9)){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==8 && (ures==5 || ures==7 || ures==9)){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==9 && (ures==6 || ures==8 )){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+                if (mezo==10 && (ures==7 )){document.getElementById(ures).src=document.getElementById(mezo).src;
+                    document.getElementById(mezo).src="";
+                    ures=mezo;}
+
+            }
+
+        </script>
+    </body>
+</html>    

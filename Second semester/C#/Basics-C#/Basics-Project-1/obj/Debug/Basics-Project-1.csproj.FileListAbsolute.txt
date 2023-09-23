@@ -1,0 +1,7 @@
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\Basics-Project-1\bin\Debug\Basics-Project-1.exe.config
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\Basics-Project-1\bin\Debug\Basics-Project-1.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\Basics-Project-1\bin\Debug\Basics-Project-1.pdb
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\Basics-Project-1\obj\Debug\Basics-Project-1.csproj.AssemblyReference.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\Basics-Project-1\obj\Debug\Basics-Project-1.csproj.CoreCompileInputs.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\Basics-Project-1\obj\Debug\Basics-Project-1.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\Basics-Project-1\obj\Debug\Basics-Project-1.pdb

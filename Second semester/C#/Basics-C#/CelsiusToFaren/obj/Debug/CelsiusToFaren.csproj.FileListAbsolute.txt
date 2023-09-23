@@ -1,0 +1,7 @@
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\CelsiusToFaren\bin\Debug\CelsiusToFaren.exe.config
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\CelsiusToFaren\bin\Debug\CelsiusToFaren.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\CelsiusToFaren\bin\Debug\CelsiusToFaren.pdb
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\CelsiusToFaren\obj\Debug\CelsiusToFaren.csproj.AssemblyReference.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\CelsiusToFaren\obj\Debug\CelsiusToFaren.csproj.CoreCompileInputs.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\CelsiusToFaren\obj\Debug\CelsiusToFaren.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\CelsiusToFaren\obj\Debug\CelsiusToFaren.pdb

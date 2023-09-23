@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics-Project-1", "Basics-Project-1\Basics-Project-1.csproj", "{98D13902-8B76-4051-B6A3-D739AA2B5991}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeglatestFelszTerf", "TeglatestFelszTerf\TeglatestFelszTerf.csproj", "{A68B3E37-394F-4FCB-8C8C-DE349BE2F461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CelsiusToFaren", "CelsiusToFaren\CelsiusToFaren.csproj", "{3C738E6E-C617-4FBA-8590-06C07A5DCE02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{98D13902-8B76-4051-B6A3-D739AA2B5991}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98D13902-8B76-4051-B6A3-D739AA2B5991}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98D13902-8B76-4051-B6A3-D739AA2B5991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A68B3E37-394F-4FCB-8C8C-DE349BE2F461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A68B3E37-394F-4FCB-8C8C-DE349BE2F461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A68B3E37-394F-4FCB-8C8C-DE349BE2F461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A68B3E37-394F-4FCB-8C8C-DE349BE2F461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C738E6E-C617-4FBA-8590-06C07A5DCE02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C738E6E-C617-4FBA-8590-06C07A5DCE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C738E6E-C617-4FBA-8590-06C07A5DCE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C738E6E-C617-4FBA-8590-06C07A5DCE02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

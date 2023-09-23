@@ -1,0 +1,7 @@
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\TeglatestFelszTerf\bin\Debug\TeglatestFelszTerf.exe.config
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\TeglatestFelszTerf\bin\Debug\TeglatestFelszTerf.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\TeglatestFelszTerf\bin\Debug\TeglatestFelszTerf.pdb
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\TeglatestFelszTerf\obj\Debug\TeglatestFelszTerf.csproj.AssemblyReference.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\TeglatestFelszTerf\obj\Debug\TeglatestFelszTerf.csproj.CoreCompileInputs.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\TeglatestFelszTerf\obj\Debug\TeglatestFelszTerf.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\TeglatestFelszTerf\obj\Debug\TeglatestFelszTerf.pdb
