@@ -1,0 +1,7 @@
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\hetedik\bin\Debug\hetedik.exe.config
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\hetedik\bin\Debug\hetedik.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\hetedik\bin\Debug\hetedik.pdb
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\hetedik\obj\Debug\hetedik.csproj.AssemblyReference.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\hetedik\obj\Debug\hetedik.csproj.CoreCompileInputs.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\hetedik\obj\Debug\hetedik.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\hetedik\obj\Debug\hetedik.pdb

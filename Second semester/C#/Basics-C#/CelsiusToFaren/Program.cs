@@ -8,10 +8,6 @@ namespace CelsiusToFaren
 {
     internal class Program
     {
-        public void weather(string cOrF, double n)
-        {
-
-        }
         static void Main(string[] args)
         {
             while (true)
@@ -22,7 +18,6 @@ namespace CelsiusToFaren
                 double num = double.Parse(Console.ReadLine());
                 if (celOrFar == "c" || celOrFar == "C" || celOrFar == "°C")
                 {
-                    weather("C", num);
                     Console.Write($"Ez fahreinheit-ben ennyi(°F): {Math.Round(num * 1.8 + 32)}");
                     break;
                 }

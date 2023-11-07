@@ -1,0 +1,7 @@
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\tizenegyedik\bin\Debug\tizenegyedik.exe.config
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\tizenegyedik\bin\Debug\tizenegyedik.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\tizenegyedik\bin\Debug\tizenegyedik.pdb
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\tizenegyedik\obj\Debug\tizenegyedik.csproj.AssemblyReference.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\tizenegyedik\obj\Debug\tizenegyedik.csproj.CoreCompileInputs.cache
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\tizenegyedik\obj\Debug\tizenegyedik.exe
+C:\Users\fulop\Desktop\Mechwart-software_dev\Second semester\C#\Basics-C#\tizenegyedik\obj\Debug\tizenegyedik.pdb

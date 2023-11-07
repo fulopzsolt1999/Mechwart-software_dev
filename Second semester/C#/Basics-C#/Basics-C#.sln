@@ -9,6 +9,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeglatestFelszTerf", "Tegla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CelsiusToFaren", "CelsiusToFaren\CelsiusToFaren.csproj", "{3C738E6E-C617-4FBA-8590-06C07A5DCE02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harmadik", "harmadik\harmadik.csproj", "{DF67248C-1CFE-481A-B9A0-ADF5FC14916D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ötödik", "ötödik\ötödik.csproj", "{37F9DFB4-EB4E-4C51-B7DA-BFE4453A489F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hetedik", "hetedik\hetedik.csproj", "{5602A899-19F8-45B4-B78F-4C1EA847C2E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hatodik", "hatodik\hatodik.csproj", "{E882186A-F689-4328-A2DC-AE84969A91AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kilencedik", "kilencedik\kilencedik.csproj", "{9DBC72A2-D4A5-4CC0-938F-75B17C8C1FB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tizedik", "Tizedik\Tizedik.csproj", "{ABD7B036-1192-44DA-8071-45C11E447CA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tizenegyedik", "tizenegyedik\tizenegyedik.csproj", "{287E1205-7AEA-43A2-B24E-6F79210648DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +41,34 @@ Global
 		{3C738E6E-C617-4FBA-8590-06C07A5DCE02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C738E6E-C617-4FBA-8590-06C07A5DCE02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C738E6E-C617-4FBA-8590-06C07A5DCE02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF67248C-1CFE-481A-B9A0-ADF5FC14916D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF67248C-1CFE-481A-B9A0-ADF5FC14916D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF67248C-1CFE-481A-B9A0-ADF5FC14916D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF67248C-1CFE-481A-B9A0-ADF5FC14916D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37F9DFB4-EB4E-4C51-B7DA-BFE4453A489F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37F9DFB4-EB4E-4C51-B7DA-BFE4453A489F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37F9DFB4-EB4E-4C51-B7DA-BFE4453A489F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37F9DFB4-EB4E-4C51-B7DA-BFE4453A489F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5602A899-19F8-45B4-B78F-4C1EA847C2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5602A899-19F8-45B4-B78F-4C1EA847C2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5602A899-19F8-45B4-B78F-4C1EA847C2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5602A899-19F8-45B4-B78F-4C1EA847C2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E882186A-F689-4328-A2DC-AE84969A91AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E882186A-F689-4328-A2DC-AE84969A91AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E882186A-F689-4328-A2DC-AE84969A91AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E882186A-F689-4328-A2DC-AE84969A91AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DBC72A2-D4A5-4CC0-938F-75B17C8C1FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBC72A2-D4A5-4CC0-938F-75B17C8C1FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBC72A2-D4A5-4CC0-938F-75B17C8C1FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBC72A2-D4A5-4CC0-938F-75B17C8C1FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD7B036-1192-44DA-8071-45C11E447CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD7B036-1192-44DA-8071-45C11E447CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD7B036-1192-44DA-8071-45C11E447CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD7B036-1192-44DA-8071-45C11E447CA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287E1205-7AEA-43A2-B24E-6F79210648DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287E1205-7AEA-43A2-B24E-6F79210648DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287E1205-7AEA-43A2-B24E-6F79210648DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287E1205-7AEA-43A2-B24E-6F79210648DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
