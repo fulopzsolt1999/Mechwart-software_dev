@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Magic 8 Ball</title>
+      <style>
+         @keyframes shake {
+            0%,
+            100% {
+               transform: translateX(0);
+            }
+            25%,
+            75% {
+               transform: translateX(-10px);
+            }
+            50% {
+               transform: translateX(10px);
+            }
+         }
+
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+
+         body {
+            background-color: bisque;
+         }
+
+         .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+         }
+
+         .container img {
+            width: 750px;
+         }
+
+         .container #magic8ball.shake,
+         .container #magicText.shake {
+            animation: shake 1s ease-in-out;
+            animation-iteration-count: 2;
+         }
+
+         .container #magicText {
+            position: fixed;
+            bottom: 470px;
+            color: #ffffff;
+            font-size: 26px;
+            cursor: pointer;
+            animation: none;
+         }
+
+         .container #magicText.affirmative {
+            color: rgb(3, 212, 3);
+         }
+
+         .container #magicText.non-commital {
+            color: yellow;
+         }
+
+         .container #magicText.negative {
+            color: rgb(254, 23, 23);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <img src="8-Ball.png" id="magic8ball" />
+         <div id="magicText">Shake me!</div>
+      </div>
+
+      <script>
+         const magic8ball = document.getElementById("magic8ball");
+         const magicText = document.getElementById("magicText");
+         const answers = [
+            "It is decidedly so",
+            "It is certain",
+            "Without a doubt",
+            "Yes definitely",
+            "You may rely on it",
+            "As I see it, yes",
+            "Most likely",
+            "Outlook good",
+            "Yes",
+            "Signs point to yes",
+            "Reply hazy, try again",
+            "Ask again later",
+            "Better not tell you now",
+            "Cannot predict now",
+            "Concentrate and ask again",
+            "Don't count on it",
+            "My reply is no",
+            "My sources say no",
+            "Outlook not so good",
+            "Very doubtful ",
+         ];
+
+         magicText.addEventListener("click", () => {
+            magic8ball.className = "";
+            magicText.className = "";
+            magicText.innerHTML = "";
+            magic8ball.classList.add("shake");
+            magicText.classList.add("shake");
+            setTimeout(() => {
+               magicText.innerText = getAnswer();
+               magic8ball.classList.remove("shake");
+               magicText.classList.remove("shake");
+            }, 2000);
+         });
+
+         function getAnswer() {
+            const randomIndex = Math.floor(Math.random() * answers.length);
+            if (randomIndex < 10) {
+               magicText.classList.add("affirmative");
+               magicText.classList.remove();
+            } else if (randomIndex < 15) {
+               magicText.classList.add("non-commital");
+            } else {
+               magicText.classList.add("negative");
+            }
+            return answers[randomIndex];
+         }
+      </script>
+   </body>
+</html>
