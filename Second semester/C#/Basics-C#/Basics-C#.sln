@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tizedik", "Tizedik\Tizedik.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tizenegyedik", "tizenegyedik\tizenegyedik.csproj", "{287E1205-7AEA-43A2-B24E-6F79210648DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tizenkettedik", "tizenkettedik\tizenkettedik.csproj", "{509C33B3-CCB2-4BDB-A291-C75D2EF7C927}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{287E1205-7AEA-43A2-B24E-6F79210648DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{287E1205-7AEA-43A2-B24E-6F79210648DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{287E1205-7AEA-43A2-B24E-6F79210648DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{509C33B3-CCB2-4BDB-A291-C75D2EF7C927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{509C33B3-CCB2-4BDB-A291-C75D2EF7C927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{509C33B3-CCB2-4BDB-A291-C75D2EF7C927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{509C33B3-CCB2-4BDB-A291-C75D2EF7C927}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

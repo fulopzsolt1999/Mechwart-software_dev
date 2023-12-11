@@ -1,0 +1,47 @@
+1. Készítsen listát az összes filmről a címük és elnyert díjaik számának feltüntetésével! A listát rendezze
+a jelölések száma szerint csökkenő rendbe, ezen belül cím szerint névsorba!
+
+	SELECT cim, dij, jelol FROM `filmek` ORDER BY jelol DESC, cim; 
+
+2. Listázza ki az 1950 után legalább 3 Oscar-díjjal jutalmazott filmek címét, a díjak és jelölések számát!
+A listát rendezze a filmek címe szerint névsorba!
+
+	SELECT cim, dij, jelol FROM `filmek` WHERE dij >= 3 AND ev > 1950 ORDER BY cim; 
+
+3. Készítsen listát az 5 legtöbb jelölést kapott film címéről, a díjazás évéről!
+
+	SELECT cim, ev FROM `filmek`ORDER BY jelol DESC LIMIT 5; 
+
+4. Készítsen listát az 2000 után 5 legtöbb díjat kapott film címéről és a díjak számáról!
+
+	SELECT cim, dij FROM `filmek` WHERE ev > 2000 ORDER BY dij DESC LIMIT 5; 
+
+5. Listázza ki az összes olyan film adatát, amely címében szerepel a King szó vagy szórészlet! Jelenítse
+meg a film címét, a jelölések és az elnyert díjak számát! Rendezze a listát a jelölések, ezen belül a
+díjak száma szerint csökkenő sorrendbe!
+
+	SELECT cim, jelol, dij FROM `filmek` WHERE cim LIKE '%King%' ORDER BY jelol DESC; 
+
+6. Listázza ki azoknak a filmeknek minden adatát, amelyek minden jelölést megnyertek! A listát
+rendezze év szerint, ezen belül cím szerint növekvő sorrendbe!
+
+	SELECT * FROM `filmek` WHERE dij = jelol ORDER BY ev, cim; 
+
+7. Listázza ki a II. világháború alatt legalább 3 Oscar-díjat kapott filmek címét és a díjazás évét! A listát
+rendezze a díjazás éve, ezen belül a film címe szerint növekvő sorrendbe!
+
+	SELECT cim, ev FROM `filmek` WHERE ev >= 1940 AND ev <= 1945 AND dij >= 3 ORDER BY ev, cim; 
+
+8. Listázza ki azokat a filmeket, amelyek az Ön vagy édesanyja születési évében kaptak több, mint 4
+jelölést! Jelenítse meg a filmek címét névsorban!
+
+	SELECT cim, ev, dij FROM `filmek` WHERE (ev = 1968 OR ev = 1999) AND jelol >= 4 ORDER BY cim; 
+
+9. Készítsen listát azokról a filmcímekről, melyek a The szóval kezdődnek! Rendezze a listát névsorba!
+
+	SELECT cim FROM `filmek` WHERE cim LIKE 'The%' ORDER BY cim; 
+
+10. Listázza ki azoknak a filmeknek minden adatát, melyek 1960 után készültek és minden jelölést
+megnyertek! Rendezze a listát a jelölés és ev szerint csökkenő sorrendbe!
+
+	SELECT * FROM `filmek` WHERE ev > 1960 AND dij = jelol ORDER BY jelol DESC, ev DESC; 

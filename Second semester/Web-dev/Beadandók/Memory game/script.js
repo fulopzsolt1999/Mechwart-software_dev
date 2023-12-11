@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-   // Images
+   // Card data
    const cardData = [
       {
          frontImage: "imgs/side_img.jpg",
@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
    // Shuffle the array of card data
    shuffleArray(cardData);
-
    function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
          const j = Math.floor(Math.random() * (i + 1));
@@ -111,11 +110,11 @@ document.addEventListener("DOMContentLoaded", function () {
       cardContainer.appendChild(cardElement);
    });
 
-   // Create click event
-
+   // Handle click events on cards
    function handleCardClick(event) {
       const clickedCard = event.currentTarget;
       clickedCard.style.transform = "rotateY(180deg)";
+      clickedCard.classList.add("periodicUnclickable");
       storeClickedCards.push(clickedCard);
       if (storeClickedCards.length === 2) {
          if (
@@ -126,16 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
             storeClickedCards[0].classList.add("unclickable");
             storeClickedCards[1].classList.add("unclickable");
             storeClickedCards = [];
-            /* 
-            });
-            setTimeout(() => {
-               document.querySelectorAll(".card-inner").forEach((card) => {
-                  card.classList.remove("unclickable");
-               });
-               
-            }, 1000); */
          } else {
-            document.querySelectorAll(".card-inner:not(.unclickable)").forEach((card) => {
+            document.querySelectorAll(".card-inner:not(.periodicUnclickable)").forEach((card) => {
                card.classList.add("periodicUnclickable");
             });
             setTimeout(() => {
@@ -155,11 +146,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
    }
 
+   // Handle win, and show restart button
    function handleWinCondition() {
       window.alert("Congratulations! You Win!");
       restartGame();
    }
 
+   // Handle restart game
    function restartGame() {
       const resetButton = document.getElementById("btn");
       resetButton.style.opacity = "1";

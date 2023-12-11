@@ -1,0 +1,34 @@
+2. Hány előadást tartottak az egyes tudományágakban? Jelenítse meg a tudományág nevét
+és az előadások számát! A számított mező címkéje eloadasszam legyen! A listát
+rendezze az előadások száma szerint csökkenő sorrendbe!
+
+	SELECT tudomanyag, COUNT(tudomanyag) AS eloadasszam FROM `eloadasok` GROUP BY tudomanyag ORDER BY eloadasszam DESC;
+
+3. Összesen hányan nézték meg a műszaki tudományok témakörbe tartozó előadásokat?
+
+	SELECT SUM(resztvevok) AS 'részvevők száma' FROM `eloadasok` WHERE tudomanyag = 'műszaki tudományok'; 
+
+4. Átlagos nézőszám alapján melyik a 3 legnépszerűbb tudományág? Jelenítse meg a
+tudományág nevét és a nézők átlagos számát!
+
+	SELECT tudomanyag, AVG(resztvevok) AS 'a nézők átlagos száma' FROM `eloadasok` GROUP BY tudomanyag ORDER BY AVG(resztvevok) DESC LIMIT 3; 
+
+5. Összesen hány olyan előadás volt, melynek címében szerepel az energia kifejezés?
+
+	SELECT COUNT(tema) as 'előadások száma' FROM `eloadasok` WHERE tema LIKE '%energia%'; 
+
+6. Az orvostudományi előadásoknak mennyi volt a jegyekből származó bevétele? Jelenjem
+meg a listában az előadás címe, az előadó neve valamint a bevétel! A listát rendezze
+bevétel alapján csökkenő sorrendbe!
+
+	SELECT tema, eloado, jegy AS 'bevétel' FROM `eloadasok` WHERE tudomanyag = 'orvostudományok' ORDER BY `bevétel` DESC 
+
+7./a Jelenítse meg azoknak az előadóknak a nevét, akik egynél több előadást tartottak meg!
+A listát rendezze névsorba!
+
+	SELECT eloado FROM `eloadasok` GROUP BY eloado HAVING COUNT(eloado) > 1 ORDER BY eloado; 
+	
+
+7/b Hány előadást tartottak?
+
+	SELECT eloado, COUNT(eloado) AS 'előadások száma' FROM `eloadasok` GROUP BY eloado HAVING COUNT(eloado) > 1 ORDER BY eloado; 

@@ -1,0 +1,26 @@
+2. Készítsen listát a főtételekről minden adatuk feltüntetésével! A listát rendezze az étel ára szerint
+csökkenő sorrendbe, ezen belül az étel neve szerint névsorba!
+
+	SELECT * FROM `etlap` WHERE kategoria = 'F' ORDER BY ara DESC; 
+
+3. Mennyibe kerülne, ha az összes desszertből szeretnénk elfogyasztani egy adagot?
+
+	SELECT SUM(ara) AS 'összesen' FROM `etlap` GROUP BY kategoria HAVING kategoria = 'D'; 
+
+Mennyi kategóriánként az összeg?
+
+	SELECT kategoria, SUM(ara) AS 'összesen' FROM `etlap` GROUP BY kategoria; 
+
+4. Jelenítse meg a képernyőn az egyes ételkategóriák átlagos energia- és szénhidrát tartalmát!
+
+	SELECT kategoria, AVG(energia) AS 'átlagos energiatartalom', AVG(szenh) AS 'átlagos szénhidráttartalom' FROM `etlap` GROUP BY kategoria; 
+
+5. Hány féle ételből választhatnak a vendégek az egyes ételkategóriákban Az én anyósom étteremben? A
+listát rendezze az ételek száma szerint növekvő sorrendbe!
+
+	SELECT kategoria, COUNT(neve) AS 'ételek száma' FROM `etlap` GROUP BY kategoria ORDER BY COUNT(neve); 
+
+6. Melyek azok az ételkategóriák, melyek átlagos szénhidrát tartalma nem haladja meg a 10g-ot?
+Jelenítse meg a képernyőn a kategória nevét és az átlagos szénhidrát tartalmat!
+
+	SELECT kategoria, AVG(szenh) AS 'átlagos szénhidráttartalom' FROM `etlap` GROUP BY kategoria HAVING AVG(szenh) < 10; 

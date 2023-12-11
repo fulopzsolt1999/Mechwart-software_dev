@@ -64,9 +64,9 @@ namespace tizenegyedik
                     }
                 }
             }
-            Console.WriteLine($"Ennyi karakter szóköz nélkül: {mondat.Length-space}");
+            Console.WriteLine($"Ennyi karakter van: {mondat.Length}");
             Console.WriteLine($"Ennyi szó van: {space+1}");
-            Console.WriteLine($"A 4. szó: {mondat.Substring(space_3, space_4)}");
+            Console.WriteLine($"A 4. szó: {mondat.Substring(space_3, space_4)}")
 
             Console.ReadKey();
         }
