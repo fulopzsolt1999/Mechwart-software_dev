@@ -1,0 +1,71 @@
+Egészítse ki  és futtassa le a lekérdezéseket!
+
+1. Hogy hívják a legidősebb tagot?
+
+select nev FROM `tagok` ORDER BY kor DESC LIMIT 1;
+
+2. Hogy hívják a legfiatalabb tagot, és hol lakik?
+
+select nev FROM `tagok` ORDER BY kor LIMIT 1;                                              
+
+from tagok inner join varosok on tagok.irsz=varosok.irsz
+
+3. Mennyi a tagok átlagéletkora?
+
+select AVG(kor) AS atlag_eletkor FROM `tagok`;
+
+4. Melyik városokban laknak a tagok?
+
+select tagok.*, varosok.varos FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz;
+
+5. Hányan klubtag lakik az egyes városokban külön-külön? 
+
+select varosok.varos, COUNT(tagok.irsz) AS klubtagok_szama FROM varosok LEFT JOIN tagok ON varosok.irsz = tagok.irsz GROUP BY varosok.varos;
+
+6. Írassa ki a tagok nevét fordított abc sorrendben városukkal együtt!
+
+select tagok.nev, varosok.varos FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz ORDER BY tagok.nev DESC;
+
+7. Kik laknak Pakson? (nev, varos)
+
+select tagok.nev, varosok.varos FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz WHERE varosok.varos = 'Paks';
+
+8. Mennyi a paksi tagok átlagéletkora?
+
+select AVG(kor) AS atlag_eletkor FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz WHERE varosok.varos = 'Paks';
+
+9. Hol lakik Henrik? (név, város)
+
+select tagok.nev, varosok.varos FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz WHERE tagok.nev = 'Henrik';
+
+10. Melyik városokból nincs tag?
+
+select varosok.varos FROM varosok LEFT JOIN tagok ON varosok.irsz = tagok.irsz WHERE tagok.irsz IS NULL;
+
+11. Melyik településen lakik a legtöbb tag?
+
+select varosok.varos, COUNT(tagok.id) AS tagok_szama FROM varosok LEFT JOIN tagok ON varosok.irsz = tagok.irsz GROUP BY varosok.varos ORDER BY tagok_szama DESC LIMIT 1;
+
+12. Melyik településen lakik 1-nél több tag? (kiindulás az 5-ös feladatból)
+
+select varosok.varos, COUNT(tagok.id) AS tagok_szama FROM varosok LEFT JOIN tagok ON varosok.irsz = tagok.irsz GROUP BY varosok.varos HAVING tagok_szama > 1;
+
+13. Kik laknak a 2890-es irányítószámú városban?  (nev, irsz)
+
+select tagok.nev, varosok.irsz FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz WHERE varosok.irsz = 2890;
+
+13. Kik és hol laknak azok, akiknek 2890 az irányítószáma?
+
+select tagok.nev, varosok.varos FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz WHERE varosok.irsz = 2890;
+
+14. Hány klubtag lakik Ajkán?
+
+select COUNT(tagok.id) AS klubtagok_szama FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz WHERE varosok.varos = 'Ajka';
+
+15. Hány város szerepel a varosok táblában?
+
+select COUNT(varos) AS varosok_szama FROM varosok;
+
+16. Ki a legidősebb paksi klubtag? (kiindulás a 2-es feladatból)
+
+select SELECT tagok.nev, MAX(tagok.kor) AS legidosebb FROM tagok JOIN varosok ON tagok.irsz = varosok.irsz WHERE varosok.varos = 'Paks' GROUP BY tagok.nev ORDER BY legidosebb DESC LIMIT 1;
