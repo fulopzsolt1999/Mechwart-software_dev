@@ -1,12 +1,8 @@
 <html>
    <head>
-      {% comment %}
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      {% endcomment %}
-      <title>Zsolt's website</title>
+      <title>{% block title %}Zsolt's Site{% endblock %}</title>
    </head>
    <body>
-      <p>Base Template</p>
+      <div id="content" , name="content"> {% block content %} {% endblock %} </div>
    </body>
 </html>
