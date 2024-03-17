@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
    <head>
       <link
@@ -8,13 +9,13 @@
       <title>Beadandó</title>
    </head>
    <body>
+      {% block content %}
       <h1>Szak modell tábla</h1>
       <table class="table table-striped table-dark table-bordered table-hover">
          <thead>
             <tr>
                <th>ID</th>
                <th>Szaknév</th>
-               <th>Támogatott</th>
             </tr>
          </thead>
          <tbody>
@@ -22,7 +23,6 @@
             <tr>
                <td>{{ item.id }}</td>
                <td>{{ item.szakNev }}</td>
-               <td> {% if item.tamogatott %}Igen{% else %}Nem{% endif %} </td>
             </tr>
             {% endfor %}
          </tbody>
@@ -33,6 +33,7 @@
          <thead>
             <tr>
                <th>ID</th>
+               <th>Szak</th>
                <th>Név</th>
                <th>Születési idő</th>
                <th>Pontszám</th>
@@ -42,6 +43,7 @@
             {% for item in all_felvData %}
             <tr>
                <td>{{ item.id }}</td>
+               <td>{{ item.szak }}</td>
                <td>{{ item.name }}</td>
                <td>{{ item.szul_ev }}</td>
                <td>{{ item.pontszam }}</td>
@@ -49,6 +51,27 @@
             {% endfor %}
          </tbody>
       </table>
+      <h1>Új felvételiző hozzáadása</h1>
+      <form method="POST" action="{% url 'handle_register' %}">
+         {% csrf_token %}
+         <label for="name">Név:</label>
+         <input type="text" name="name" required />
+         <br />
+         <label for="szul_ev">Születési év:</label>
+         <input type="number" name="szul_ev" required />
+         <br />
+         <label for="pontszam">Pontszam:</label>
+         <input type="number" name="pontszam" required />
+         <br />
+         <label for="szak">Szak:</label>
+         <select name="szak">
+            {% for szak in all_szakData %}
+            <option>{{szak.szakNev}}</option>
+            {% endfor %}
+         </select>
+         <button type="submit">Submit</button>
+      </form>
+      {% endblock %}
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
