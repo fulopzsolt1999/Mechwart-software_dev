@@ -1,4 +1,4 @@
-import Student from "./Student/Student";
+import Student from "./Props/Student";
 
 function App() {
    return (
