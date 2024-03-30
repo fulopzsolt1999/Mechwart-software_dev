@@ -1,11 +1,9 @@
-//import MyComponent from "./UseState/MyComponent.jsx";
-import Counter from "./UseState/Counter.jsx";
+import MyComponent from "./Change events/MyComponent.jsx";
 
 function App() {
    return (
       <>
-         {/* <MyComponent /> */}
-         <Counter />
+         <MyComponent />
       </>
    );
 }
