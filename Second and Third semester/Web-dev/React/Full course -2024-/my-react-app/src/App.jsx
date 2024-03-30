@@ -1,9 +1,9 @@
-import MyComponent from "./14 - UseEffect/MyComponent.jsx";
+import DigitalClock from "./15 - Digital clock app/DigitalClock.jsx";
 
 function App() {
    return (
       <>
-         <MyComponent />
+         <DigitalClock />
       </>
    );
 }
