@@ -1,9 +1,9 @@
-import MyComponent from "./Change events/MyComponent.jsx";
+import ColorPicker from "./09 - Color picker app/ColorPicker.jsx";
 
 function App() {
    return (
       <>
-         <MyComponent />
+         <ColorPicker />
       </>
    );
 }
