@@ -1,9 +1,9 @@
-import MyComponent from "./12 - Array of Objects update/MyComponent.jsx";
+import ToDoList from "./13 - To-do list app/ToDoList.jsx";
 
 function App() {
    return (
       <>
-         <MyComponent />
+         <ToDoList />
       </>
    );
 }
