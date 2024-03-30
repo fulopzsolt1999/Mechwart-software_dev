@@ -1,11 +1,11 @@
-import Button from "./Click events/Button.jsx";
-import ProfilePicture from "./Click events/ProfilePicture.jsx";
+//import MyComponent from "./UseState/MyComponent.jsx";
+import Counter from "./UseState/Counter.jsx";
 
 function App() {
    return (
       <>
-         <Button />
-         <ProfilePicture />
+         {/* <MyComponent /> */}
+         <Counter />
       </>
    );
 }
