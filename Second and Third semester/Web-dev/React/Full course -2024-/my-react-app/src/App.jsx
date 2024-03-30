@@ -1,9 +1,9 @@
-import ComponentA from "./16 - UseContext/ComponentA.jsx";
+import MyComponent from "./17 - UseRef/MyComponent.jsx";
 
 function App() {
    return (
       <>
-         <ComponentA />
+         <MyComponent />
       </>
    );
 }
