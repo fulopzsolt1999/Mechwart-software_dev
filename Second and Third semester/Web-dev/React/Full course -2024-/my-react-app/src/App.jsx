@@ -1,4 +1,4 @@
-import MyComponent from "./10 - Objects update/MyComponent.jsx";
+import MyComponent from "./11 - Arrays update/MyComponent.jsx";
 
 function App() {
    return (
