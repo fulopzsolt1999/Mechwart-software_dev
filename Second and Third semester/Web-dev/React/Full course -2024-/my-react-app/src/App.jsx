@@ -1,9 +1,9 @@
-import ToDoList from "./13 - To-do list app/ToDoList.jsx";
+import MyComponent from "./14 - UseEffect/MyComponent.jsx";
 
 function App() {
    return (
       <>
-         <ToDoList />
+         <MyComponent />
       </>
    );
 }
