@@ -1,9 +1,9 @@
-import MyComponent from "./17 - UseRef/MyComponent.jsx";
+import Stopwatch from "./18 - Stopwatch app/Stopwatch.jsx";
 
 function App() {
    return (
       <>
-         <MyComponent />
+         <Stopwatch />
       </>
    );
 }
