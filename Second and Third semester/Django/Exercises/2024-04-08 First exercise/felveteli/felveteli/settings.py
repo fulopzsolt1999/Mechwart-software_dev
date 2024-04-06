@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-f*icopk8tz!-en0q&su7_rv1#mp)%&opz6r#%-a@8d0q3vhh=7'
+SECRET_KEY = 'django-insecure-1#0z&*2vqeizh5g7flkf73n7sw6l&wn1nncet5+9521@5pe6s('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'felviadmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'felviadmin'
 ]
 
 MIDDLEWARE = [
