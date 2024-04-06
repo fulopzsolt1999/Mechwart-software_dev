@@ -1,0 +1,15 @@
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\bin\Debug\net8.0\EU.exe
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\bin\Debug\net8.0\EU.deps.json
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\bin\Debug\net8.0\EU.runtimeconfig.json
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\bin\Debug\net8.0\EU.dll
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\bin\Debug\net8.0\EU.pdb
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.AssemblyInfoInputs.cache
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.AssemblyInfo.cs
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.csproj.CoreCompileInputs.cache
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.sourcelink.json
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.dll
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\refint\EU.dll
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.pdb
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\EU.genruntimeconfig.cache
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\EU_Exercise\EU\EU\obj\Debug\net8.0\ref\EU.dll

@@ -1,0 +1,15 @@
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\bin\Debug\net8.0\MembersC.exe
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\bin\Debug\net8.0\MembersC.deps.json
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\bin\Debug\net8.0\MembersC.runtimeconfig.json
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\bin\Debug\net8.0\MembersC.dll
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\bin\Debug\net8.0\MembersC.pdb
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.AssemblyInfoInputs.cache
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.AssemblyInfo.cs
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.csproj.CoreCompileInputs.cache
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.sourcelink.json
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.dll
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\refint\MembersC.dll
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.pdb
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\MembersC.genruntimeconfig.cache
+C:\Users\fulop\OneDrive\Asztali gép\Mechwart-software_dev\Second and Third semester\C#\Learning-C#_Youtube\MembersC\MembersC\obj\Debug\net8.0\ref\MembersC.dll
