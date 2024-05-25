@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'raktar/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Termékek neve:</h1>
+    
+    <table>
+        {% for termek in termekLista %}
+        <tr>
+        <td>{{ termek.termekNev }}</td>
+        <td>{{ termek.ar }}</td>
+        <td>{{ termek.db }}</td>
+        <td>{{ termek.kategoria }}</td>
+        <td><a href="deleteByUrl/{{ termek.id}}">Törlés</a></td>
+        </tr>
+        {% endfor %}
+        
+    </table>
+    <form action="{% url 'raktar:addTermek' %}" method="post">
+        {% csrf_token %}
+        <label>
+            Termék neve: <input type="text" name="termeknev" id="termeknev">
+        </label>
+        <br>
+        <label>
+            Egységár: <input type="number" step="1" name="ar" id="ar">
+        </label>
+        <br>
+        <label>
+            Darabszám: <input type="number" step="1" name="db" id="db">
+        </label>
+        <br>
+        <label>
+            Kategória: <select name="kategoria" id="kategoria">
+                {% for kategoria in kategoriaLista %}
+                    <option value="{{kategoria.kategoriaNev}}">{{kategoria.kategoriaNev}}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <br>
+        <input type="submit" value="Termék felvitele">
+    </form>
+
+    <h2>Termék törlése</h2>
+    <form action="{% url 'raktar:deleteByForm' %}" method="post">
+        {% csrf_token %}
+        <label>
+            Termék neve: <select name="termekId" id="termekId">
+                {% for termek in termekLista %}
+                <option value="{{termek.id}}">{{termek.termekNev}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Törlés">
+        </label>
+    </form>
+</body>
+</html>
