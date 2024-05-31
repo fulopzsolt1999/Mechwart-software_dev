@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+         crossorigin="anonymous" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="container mt-4">
+         <div class="row">
+            <div class="col">
+               <form action="javascript:addNewAttraction()" method="post">
+                  <div class="row">
+                     <div class="form-group col">
+                        <label for="city">Város:</label>
+                        <select name="city" id="city">
+                           <option value="default">Válassz...</option>
+                        </select>
+                     </div>
+                     <div class="form-group col">
+                        <label for="country">Ország:</label>
+                        <input
+                           class="form-control"
+                           id="country"
+                           type="text"
+                           placeholder="Readonly.."
+                           readonly />
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="attraction_name">Látványosság neve:</label>
+                     <input type="text" class="form-control" id="attraction_name" />
+                  </div>
+                  <div class="form-group">
+                     <label for="short_desc">Rövid leírás:</label>
+                     <input type="text" class="form-control" id="short_desc" />
+                  </div>
+                  <div class="form-group">
+                     <label for="avg_rate">Átlagos értékelés:</label>
+                     <input
+                        type="number"
+                        class="form-control"
+                        id="avg_rate"
+                        step=".01"
+                        min="1"
+                        max="5" />
+                  </div>
+                  <div class="form-group">
+                     <label for="opening_hours">Nyitvatartási idő:</label>
+                     <input
+                        type="text"
+                        class="form-control"
+                        id="opening_hours"
+                        aria-describedby="opening_hours_help" />
+                     <small id="opening_hours_help" class="form-text text-muted">
+                        H-P: 8-20, SZ-V: 8-22 | H-V: 0-24
+                     </small>
+                  </div>
+                  <button type="submit" disabled>Hozzáadás</button>
+               </form>
+            </div>
+            <div class="col">
+               <a class="btn btn-primary" href="http://127.0.0.1:8000">Főoldal</a>
+            </div>
+         </div>
+      </div>
+
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"></script>
+      <script src="..\static\post.js"></script>
+   </body>
+</html>

@@ -4,6 +4,7 @@ function addNewAttraction() {
    const short_desc = document.querySelector("#short_desc");
    const avg_rate = document.querySelector("#avg_rate");
    const opening_hours = document.querySelector("#opening_hours");
+
    fetch("http://localhost:8000/newAttraction", {
       method: "POST",
       headers: {
@@ -16,6 +17,12 @@ function addNewAttraction() {
          avg_rate: Number(avg_rate.value),
          opening_hours: opening_hours.value,
       }),
+   }).then(() => {
+      document.querySelector("#city").value = "default";
+      document.querySelector("#attraction_name").value = "";
+      document.querySelector("#short_desc").value = "";
+      document.querySelector("#avg_rate").value = "";
+      document.querySelector("#opening_hours").value = "";
    });
 }
 
@@ -26,17 +33,22 @@ function getAllAttractions() {
          const cityInput = document.querySelector("#city");
          let allCitiNames = [];
          let allCityObj = [];
+
          result.forEach((attraction) => {
-            allCityObj.push(attraction.city);
-            allCitiNames.push(attraction.city.name);
+            if (!allCitiNames.includes(attraction.city.name)) {
+               allCityObj.push(attraction.city);
+               allCitiNames.push(attraction.city.name);
+            }
          });
          allCitiNames.sort();
+
          for (const city of allCitiNames) {
             const newElement = document.createElement("option");
             newElement.innerHTML = city;
             newElement.setAttribute("value", city);
             cityInput.appendChild(newElement);
          }
+
          document.querySelector("select").addEventListener("change", () => {
             const countryInput = document.querySelector("#country");
             countryInput.value = "";
